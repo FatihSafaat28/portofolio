@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="font-['Open_Sans'] bg-sky-900">
+<body class="font-['Open_Sans'] bg-[url(img/background.jpg)]">
     <header>
-        <nav class="flex flex-row justify-between bg-gray-500 text-white px-12">
+        <nav class="flex flex-row justify-between bg-slate-800 text-white px-12">
             <div class="font-['Playfair_Display'] font-bold text-2xl">
                 Fatih Devs
             </div>
@@ -24,8 +25,8 @@
         </nav>
     </header>
     <!-- Profile -->
-    <section class="mb-2">
-        <div class="flex flex-col items-center justify-center py-6 bg-slate-400">
+    <section class="flex justify-center mt-6 mb-4">
+        <div class="flex flex-col items-center justify-center py-6 w-[40vw] bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
             <div class="w-[150px] h-[150px] rounded-full overflow-clip">
                 <img class="object-cover object-center" src="img/profile.jpg" alt="FOTO-PROFILE">
             </div>
@@ -38,167 +39,174 @@
         </div>
     </section>
     <!-- About -->
-    <section class="mb-2">
-        <div class="flex flex-col items-center justify-center py-6 bg-slate-400 gap-2">
-            <div class="font-['Playfair_Display'] text-2xl font-bold">
-                About Me
-            </div>
-            <div class="text-base font-semibold w-[50vw] text-center">
-                Lulusan Sistem Informasi dengan passion di UI/UX dan Front-End Development. Berpengalaman mengerjakan proyek desain antarmuka yang fokus pada usability dan pengalaman pengguna. Saat ini memperdalam keterampilan HTML, CSS, dan JavaScript melalui bootcamp, dengan tujuan membangun website yang responsif, intuitif, dan maintainable.
-            </div>
-            <div class="font-['Playfair_Display'] text-2xl font-bold">
-                Social Media
-            </div>
-            <div class="flex flex-row justify-center items-center gap-2">
-                <div class="flex flex-row gap-1 items-center">
-                    <div class="w-5 h-5 overflow-clip">
-                        <img src="img/instagram.png" alt="Instagram">
-                    </div>
-                    <div class="text-lg font-semibold">
-                        Follow me!
-                    </div>
+    <section class="mb-4">
+        <div class="flex flex-row justify-center gap-[5vw]">
+            <div class="flex flex-col gap-4 py-4 px-6 w-[30vw] text-white bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
+                <div class="font-['Playfair_Display'] text-2xl font-bold text-center">
+                    About Me
                 </div>
-                <div class="flex flex-row gap-1 items-center">
-                    <div class="w-5 h-5 overflow-clip">
-                        <img src="img/linkedin.png" alt="Linkedin">
-                    </div>
-                    <div class="text-lg font-semibold">
-                        Connect with me!
-                    </div>
+                <div class="flex text-base font-semibold text-center">
+                    Saya adalah seorang mahasiswaLulusan Sistem Informasi dengan passion di UI/UX dan Front-End Development. Berpengalaman mengerjakan proyek desain antarmuka yang fokus pada usability dan pengalaman pengguna. Saat ini memperdalam keterampilan HTML, CSS, dan JavaScript melalui bootcamp, dengan tujuan membangun website yang responsif, intuitif, dan maintainable.
                 </div>
-                <div class="flex flex-row gap-1 items-center">
-                    <div class="w-5 h-5 overflow-clip">
-                        <img src="img/github.png" alt="Github">
+            </div>
+            <div class="flex flex-col gap-4 py-4 px-6 w-[30vw] bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
+                <div class="font-['Playfair_Display'] text-2xl font-bold text-center text-white">
+                    Social Media
+                </div>
+                <div class="flex flex-col justify-center items-center gap-6">
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 instagram-gradient rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/instagram.png" alt="instagram">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Follow me!
+                        </div>
                     </div>
-                    <div class="text-lg font-semibold">
-                        Let's build together!
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 linkedin-gradient-bg rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/linkedin.png" alt="linkedin">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Connect with me!
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 github-gradient-text rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/github.png" alt="github">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Let's build together!
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Skill -->
-    <section class="mb-2">
-        <div class="flex flex-col items-center justify-center py-6 bg-slate-400 gap-2">
-            <div class="font-['Playfair_Display'] text-4xl font-bold">
-                What can i do?
-            </div>
-            <div class="font-['Playfair_Display'] text-2xl font-bold">
-                as UI/UX Designer
-            </div>
-            <div class="flex flex-row justify-center items-center gap-2 w-[40vw] flex-wrap">
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/UI Design.png" alt="UI Design">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        UI Design
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/UX Research.png" alt="UX Research">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        UX Research
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/User-Centered Design Framework.png" alt="User-Centered Design Framework">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        User-Centered Design Framework
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/Design Thinking.png" alt="Design Thinking.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        Design Thinking
-                    </div>
-                </div>
-            </div>
+    <section class="mb-4">
+        <div class="flex flex-row justify-center gap-[5vw] text-white text-center">
+            <div class="flex flex-col gap-6 py-4 px-6 w-[20vw] bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
                 <div class="font-['Playfair_Display'] text-2xl font-bold">
-                    as Front-End Developer
+                    UI/UX Designer Skill
                 </div>
-            <div class="flex flex-row justify-center items-center gap-2 w-[40vw] flex-wrap">
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/HTML.png" alt="HTML.png">
+                <div class="flex flex-row justify-center items-center gap-2 flex-wrap">
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/UI Design.png" alt="UI Design">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            UI Design
+                        </div>
                     </div>
-                    <div class="text-base font-semibold text-white">
-                        HTML
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/UX Research.png" alt="UX Research">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            UX Research
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/CSS.png" alt="CSS.png">
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/User-Centered Design Framework.png" alt="User-Centered Design Framework">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            User-Centered Design Framework
+                        </div>
                     </div>
-                    <div class="text-base font-semibold text-white">
-                        CSS
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/Tailwind.png" alt="Tailwind.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        Tailwind CSS
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/JS.png" alt="JS.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        JavaScript
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/TS.png" alt="TS.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        TypeScript
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/React.png" alt="React.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        React
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-blue-500 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/Design Thinking.png" alt="Design Thinking.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Design Thinking
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="flex flex-col gap-6 py-4 px-6 w-[20vw] bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
+                <div class="font-['Playfair_Display'] text-2xl font-bold">
+                    Front-End Developer Skill
+                </div>
+                <div class="flex flex-row justify-center items-center gap-2 flex-wrap">
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/HTML.png" alt="HTML.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            HTML
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/CSS.png" alt="CSS.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            CSS
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/Tailwind.png" alt="Tailwind.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Tailwind CSS
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/JS.png" alt="JS.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            JavaScript
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/TS.png" alt="TS.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            TypeScript
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-stone-700 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/React.png" alt="React.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            React
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6 py-4 px-6 w-[20vw] bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">
                 <div class="font-['Playfair_Display'] text-2xl font-bold">
                     Tools i use
                 </div>
-            <div class="flex flex-row justify-center items-center gap-2 w-[40vw] flex-wrap">
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/figma.png" alt="figma.png">
+                <div class="flex flex-row justify-center items-center gap-2 flex-wrap">
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/figma.png" alt="figma.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Figma
+                        </div>
                     </div>
-                    <div class="text-base font-semibold text-white">
-                        Figma
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/VSC.png" alt="VSC.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Visual Studio Code
+                        </div>
                     </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/VSC.png" alt="VSC.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        Visual Studio Code
-                    </div>
-                </div>
-                <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
-                    <div class="w-4 h-4 overflow-clip">
-                        <img src="img/github.png" alt="github.png">
-                    </div>
-                    <div class="text-base font-semibold text-white">
-                        Github
+                    <div class="flex flex-row gap-1 items-center py-1 px-2 bg-indigo-800 rounded-3xl">
+                        <div class="w-4 h-4 overflow-clip">
+                            <img src="img/github.png" alt="github.png">
+                        </div>
+                        <div class="text-base font-semibold text-white">
+                            Github
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,10 +214,10 @@
     </section>
     <!-- PROJECT -->
     <section class="mb-2">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 text-white">
             <div class="flex flex-row justify-center px-[5vw] gap-[5vw]">
                 <!-- PROJECT CAPSTONE -->
-                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                <div class="flex flex-col items-center justify-start bg-white/10 backdrop-blur-md shadow-lg rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
                     <div class="text-2xl font-semibold text-center">
                         <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Final Project : Sewa Kantor
                     </div>
@@ -218,7 +226,7 @@
                     </div>
                 </div>
                 <!-- MINI PROJECT -->
-                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                <div class="flex flex-col items-center justify-start bg-white/10 backdrop-blur-md shadow-lg rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
                     <div class="text-2xl font-semibold text-center">
                         <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Mini Project : Redesign 2tangtea
                     </div>
@@ -229,7 +237,7 @@
             </div>
             <!-- SKRIPSI -->
             <div class="flex flex-row justify-center px-[5vw] gap-[5vw]">
-                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                <div class="flex flex-col items-center justify-start bg-white/10 backdrop-blur-md shadow-lg rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
                     <div class="text-2xl font-semibold text-center">
                         <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Project Skripsi : Redesing Website OPAC Perpustakaan UPNVYK
                     </div>
@@ -240,7 +248,7 @@
             </div>
             <!-- Dibimbing MINI PROJECT -->
             <div class="flex flex-row justify-center px-[5vw] gap-[5vw] max-h-[762px]">
-                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-fit py-6 px-4 gap-5 overflow-clip">
+                <div class="flex flex-col items-center justify-start bg-white/10 backdrop-blur-md shadow-lg rounded-3xl w-fit py-6 px-4 gap-5 overflow-clip">
                     <div class="text-2xl font-semibold text-center">
                         <span class="font-['Playfair_Display'] font-bold block">Front-End Developer</span> Project Skripsi : Redesing Website OPAC Perpustakaan UPNVYK
                     </div>

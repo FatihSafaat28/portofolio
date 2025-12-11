@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-['Open_Sans']">
+<body class="font-['Open_Sans'] bg-sky-900">
     <header>
         <nav class="flex flex-row justify-between bg-gray-500 text-white px-12">
             <div class="font-['Playfair_Display'] font-bold text-2xl">
@@ -78,7 +78,7 @@
         </div>
     </section>
     <!-- Skill -->
-    <section>
+    <section class="mb-2">
         <div class="flex flex-col items-center justify-center py-6 bg-slate-400 gap-2">
             <div class="font-['Playfair_Display'] text-4xl font-bold">
                 What can i do?
@@ -206,27 +206,50 @@
     </section>
     <!-- PROJECT -->
     <section class="mb-2">
-        <div class="flex flex-col">
-            <div class="flex flex-row">
+        <div class="flex flex-col gap-2">
+            <div class="flex flex-row justify-center px-[5vw] gap-[5vw]">
                 <!-- PROJECT CAPSTONE -->
-                <div>
-                    capstone
+                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                    <div class="text-2xl font-semibold text-center">
+                        <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Final Project : Sewa Kantor
+                    </div>
+                    <div class="w-full rounded-3xl overflow-clip">
+                        <img class="w-full object-cover" src="img/capstone-project.png" alt="capstone-project">
+                    </div>
                 </div>
                 <!-- MINI PROJECT -->
-                <div>
-                    mini project
+                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                    <div class="text-2xl font-semibold text-center">
+                        <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Mini Project : Redesign 2tangtea
+                    </div>
+                    <div class="w-full rounded-3xl overflow-clip">
+                        <img class="w-full object-cover" src="img/mini-project.png" alt="mini-project">
+                    </div>
                 </div>
             </div>
             <!-- SKRIPSI -->
-            <div class="flex">
-                skripsi
+            <div class="flex flex-row justify-center px-[5vw] gap-[5vw]">
+                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-full py-6 px-4 gap-5 overflow-clip">
+                    <div class="text-2xl font-semibold text-center">
+                        <span class="font-['Playfair_Display'] font-bold block">UI/UX Designer</span> Project Skripsi : Redesing Website OPAC Perpustakaan UPNVYK
+                    </div>
+                    <div class="rounded-3xl overflow-clip">
+                        <img class="object-cover" src="img/skripsi-project.png" alt="skripsi-project">
+                    </div>
+                </div>
             </div>
             <!-- Dibimbing MINI PROJECT -->
-            <div class="flex">
-                mini project
+            <div class="flex flex-row justify-center px-[5vw] gap-[5vw] max-h-[762px]">
+                <div class="flex flex-col items-center justify-start bg-slate-400 rounded-3xl w-fit py-6 px-4 gap-5 overflow-clip">
+                    <div class="text-2xl font-semibold text-center">
+                        <span class="font-['Playfair_Display'] font-bold block">Front-End Developer</span> Project Skripsi : Redesing Website OPAC Perpustakaan UPNVYK
+                    </div>
+                    <div class="rounded-3xl overflow-y-auto h-full">
+                        <img src="img/coffe-project.png" alt="coffee-project">
+                    </div>
+                </div>
             </div>
         </div>
-        
     </section>
 </body>
 </html>
